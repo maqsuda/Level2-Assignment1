@@ -1,8 +1,6 @@
-## Blog Writing
+# Blog Writing
 
-# Blog Topics:
-
-1. Why is any labeled a "type safety hole," and why is unknown the safer choice for handling unpredictable data? Explain the concept of type narrowing.
+## Blog Topics: Why is any labeled a "type safety hole," and why is unknown the safer choice for handling unpredictable data? Explain the concept of type narrowing.
 
 **Any Type:**
 
@@ -19,6 +17,7 @@ userInput.toLowerCase(); // OK
 userInput.nonExistentMethod(); // OK! But crashes at runtime.
 
 **Unknown Type:**
+
 Unknown is the safer choice for unpredictable data because it acts as a type-safe counterpart to any. While it accepts any type, it enforces strict type-checking before that data can be used.
 
 You cannot call methods or access properties directly on a variable of type unknown.
