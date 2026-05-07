@@ -1,4 +1,5 @@
-// Problem-1
+// ---------------------------------Problem-1
+
 function filterEvenNumbers(arrays: number[]): number[] {
   let evenNum: number[] = [];
   for (const arr of arrays) {
@@ -10,7 +11,8 @@ function filterEvenNumbers(arrays: number[]): number[] {
 }
 filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
-//Problem-2
+//---------------------------------Problem-2
+
 function reverseString(revStr: string): string {
   let str = "";
   for (let i = revStr.length - 1; i >= 0; i--) {
@@ -20,7 +22,8 @@ function reverseString(revStr: string): string {
 }
 reverseString("typescript");
 
-//Problem-3
+//---------------------------------Problem-3
+
 function checkType(StringOrNumber: string | number) {
   if (typeof StringOrNumber === "string") {
     return "String";
@@ -31,7 +34,7 @@ function checkType(StringOrNumber: string | number) {
 checkType("Hello");
 checkType(32);
 
-//Problem-4
+//--------------------------------Problem-4
 
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
@@ -40,7 +43,7 @@ const user = { id: 1, name: "John Doe", age: 21 };
 getProperty(user, "name");
 const userName = getProperty(user, "name");
 
-//Problem-5
+//---------------------------------Problem-5
 
 interface Book {
   title: string;
@@ -57,9 +60,9 @@ const myBook = {
   author: "Jane Doe",
   publishedYear: 2024,
 };
-console.log(toggleReadStatus(myBook));
+toggleReadStatus(myBook);
 
-//Problem-6
+//------------------------------------Problem-6
 
 class Person {
   name: string;
@@ -70,7 +73,6 @@ class Person {
     this.age = age;
   }
 }
-
 class Student extends Person {
   grade: string;
   constructor(name: string, age: number, grade: string) {
@@ -85,7 +87,7 @@ class Student extends Person {
 const student = new Student("Alice", 20, "A");
 student.getDetails();
 
-//Problem-7
+//----------------------------------------Problem-7
 
 function getIntersection(one: number[], two: number[]): number[] {
   const result: number[] = [];
